@@ -18,7 +18,8 @@
         android:icon="@drawable/favorito"/>
 
     <item
-        android:id="@+id/chatFragmen"
+        android:id="@+id/chatFragment"
         android:title="Chat"
         android:icon="@drawable/chat"/>
+
 </menu>
