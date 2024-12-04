@@ -73,21 +73,26 @@ public class MapFragment extends Fragment implements OnMapReadyCallback {
         addPointsToMap();
     }
 
-    private void addPointsToMap () {
+    private void addPointsToMap() {
+        // Lista de coordenadas correspondientes a universidades en Teziutlán, Puebla.
         List<LatLng> points = new ArrayList<>();
-        points.add(new LatLng(19.432608,-99.133209));
-        points.add(new LatLng(20.659698,-103.349609));
-        points.add(new LatLng(25.686614,-100.316113));
-        points.add(new LatLng(21.161908,-86.851528));
-        points.add(new LatLng(19.4978,-99.1269));
+        points.add(new LatLng(19.822222, -97.355833)); // Instituto Tecnológico Superior de Teziutlán
+        points.add(new LatLng(19.812345, -97.342456)); // Universidad Autónoma de Puebla (BUAP) Campus Teziutlán
+        points.add(new LatLng(19.818432, -97.350123)); // Universidad Angelópolis de Puebla Campus Teziutlán
+        points.add(new LatLng(19.825678, -97.348900)); // Universidad de Teziutlán
 
-        for(LatLng point : points){
-            mMap.addMarker(new MarkerOptions().position(point).title("Punto de interés"));
+        // Agregar marcadores para cada punto en el mapa.
+        for (LatLng point : points) {
+            mMap.addMarker(new MarkerOptions()
+                    .position(point)
+                    .title("Universidad en Teziutlán"));
         }
 
+        // Mover la cámara al primer punto y establecer un nivel de zoom adecuado.
         LatLng firstPoint = points.get(0);
-        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(firstPoint,5));
+        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(firstPoint, 14));
     }
+
 
     @Override
     public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {

@@ -1,19 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/inicio"
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/white"
     tools:context=".UsuarioFragment">
 
-    <ListView
-        android:id="@+id/listViewPost"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_centerInParent="true">
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+
+       <androidx.recyclerview.widget.RecyclerView
+           android:id="@+id/post_reciclerView"
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:clipToPadding="false"
+           android:scrollbars="vertical" />
+
+   </LinearLayout>
 
 
-    </ListView>
-
-</LinearLayout>
+</androidx.core.widget.NestedScrollView>

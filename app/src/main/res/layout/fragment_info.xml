@@ -4,20 +4,23 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/fondo"
     tools:context=".InfoFragment">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:background="@color/blue_base">
 
 
         <org.imaginativeworld.whynotimagecarousel.ImageCarousel
             android:id="@+id/imageView"
+            android:layout_marginTop="10dp"
             android:layout_marginLeft="20dp"
-            android:layout_marginTop="20dp"
-            android:layout_width="370dp"
+            android:layout_width="350dp"
             android:layout_height="200dp" />
 
 
@@ -32,8 +35,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
-                android:layout_marginEnd="190dp"
+                android:layout_marginEnd="25dp"
                 android:text="Precio"
+                android:textColor="@color/black"
                 android:textSize="24sp" />
 
             <TextView
@@ -43,6 +47,7 @@
                 android:layout_marginLeft="20dp"
                 android:layout_marginTop="10dp"
                 android:text="Promedio"
+                android:textColor="@color/black"
                 android:textSize="20sp" />
 
         </LinearLayout>
@@ -58,6 +63,7 @@
                 android:id="@+id/txtDireccion"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+            android:textColor="@color/black"
                 android:text="Direccion" />
 
             <TextView
@@ -65,9 +71,46 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
+                android:textColor="@color/black"
                 android:text="Municipio" />
 
     </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtDescrip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textAlignment="center"
+                android:layout_gravity="center"
+                android:text="Descripcion"
+                android:textColor="@color/black"
+                android:textSize="24sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtdescripcion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textAlignment="center"
+                android:layout_gravity="center"
+                android:textColor="@color/black"
+                android:text="Descripcion" />
+        </LinearLayout>
+
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -83,6 +126,7 @@
                 android:textAlignment="center"
                 android:layout_gravity="center"
                 android:text="Especificaciones"
+                android:textColor="@color/black"
                 android:textSize="24sp" />
         </LinearLayout>
 
@@ -102,6 +146,7 @@
                     android:layout_gravity="center"
                     android:gravity="center"
                     android:text="Servicios"
+                    android:textColor="@color/black"
                     android:textAlignment="center" />
 
                 <TextView
@@ -111,6 +156,7 @@
                     android:gravity="center"
                     android:textAlignment="center"
                     android:layout_gravity="center"
+                    android:textColor="@color/black"
                     android:text="Restricciones" />
 
             </TableRow>
@@ -145,6 +191,7 @@
                     android:gravity="center"
                     android:textAlignment="center"
                     android:layout_gravity="center"
+                    android:textColor="@color/black"
                     android:text="Dimenciones m2" />
 
                 <TextView
@@ -154,6 +201,7 @@
                     android:gravity="center"
                     android:textAlignment="center"
                     android:layout_gravity="center"
+                    android:textColor="@color/black"
                     android:text="Tipo de Renta" />
 
             </TableRow>
@@ -179,7 +227,7 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:layout_marginTop="5dp"
             android:orientation="vertical">
 
@@ -187,17 +235,25 @@
                 android:id="@+id/txtCom"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:gravity="center"
-                android:textAlignment="center"
                 android:layout_gravity="center"
+                android:gravity="center"
                 android:text="Comentarios"
+                android:textAlignment="center"
+                android:textColor="@color/black"
                 android:textSize="24sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            android:orientation="vertical">
 
             <ListView
                 android:id="@+id/listViewComentarios"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="15dp"/>
+                android:layout_marginLeft="15dp" />
         </LinearLayout>
 
     </LinearLayout>

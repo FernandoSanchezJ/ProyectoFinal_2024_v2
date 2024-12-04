@@ -8,6 +8,28 @@
     android:orientation="vertical"
     tools:context="com.example.pyoyectofinal.UsuarioActivity">
 
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/blue_medio">
+
+
+          <TextView
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:text="RentaLink"
+              android:textSize="35dp"
+              android:textStyle="bold"
+              android:gravity="center"
+              android:layout_gravity="center"
+              android:textAlignment="center"
+              android:textColor="@color/black"
+              />
+
+    </androidx.appcompat.widget.Toolbar>
+
+
      <androidx.fragment.app.FragmentContainerView
         android:layout_width="match_parent"
         android:layout_weight="1"
@@ -22,6 +44,8 @@
         android:id="@+id/bottomNavigationView"
         android:layout_width="match_parent"
         android:layout_height="75dp"
+        android:background="@color/blue_medio"
+        app:itemTextColor="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"

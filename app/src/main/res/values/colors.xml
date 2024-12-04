@@ -5,5 +5,7 @@
     <color name="blue">#1FB1FF</color>
     <color name="blue_base">#BCE8FF</color>
     <color name="red">#FF0000</color>
+    <color name="blue_medio">#70CEFF</color>
+
 
 </resources>

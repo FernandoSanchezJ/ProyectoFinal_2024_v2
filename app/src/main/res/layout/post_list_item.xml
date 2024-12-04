@@ -2,18 +2,17 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
     android:orientation="horizontal"
     android:padding="10dp">
 
     <androidx.cardview.widget.CardView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="10dp"
+        android:backgroundTint="@color/blue_base"
         android:background="@drawable/custom_edit_text"
-        app:cardCornerRadius="30dp"
-        app:cardElevation="20dp">
+        app:cardCornerRadius="20dp">
 
         <LinearLayout
             android:layout_width="wrap_content"
@@ -33,40 +32,52 @@
             android:orientation="horizontal">
 
         <TextView
-            android:id="@+id/txtDireccion"
+            android:id="@+id/txtTitulo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
-            android:layout_marginEnd="170dp"
-            android:text="Direccion"
+            android:layout_marginEnd="10dp"
+            android:text="Titulo"
+            android:textColor="@color/black"
             android:textSize="18sp"/>
 
         <TextView
-            android:id="@+id/txtPromedio"
+            android:id="@+id/txtCP"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:text="Promedio"
+            android:layout_marginTop="8dp"
+            android:text="CP"
+            android:textColor="@color/black"
             android:textSize="18dp"/>
         </LinearLayout>
-
 
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:orientation="horizontal">
 
         <TextView
-            android:id="@+id/txtMunicipio"
+            android:id="@+id/txtDireccion"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="5dp"
             android:layout_marginLeft="20dp"
-            android:text="Municipio" />
-        </LinearLayout>
+            android:textColor="@color/black"
+            android:text="Direccion" />
+
+            <TextView
+                android:id="@+id/txtMunicipio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginVertical="5dp"
+                android:layout_marginLeft="20dp"
+                android:textColor="@color/black"
+                android:text="Municipio" />
 
         </LinearLayout>
 
+        </LinearLayout>
 
     </androidx.cardview.widget.CardView>
 
